@@ -1,8 +1,8 @@
 require 'telegram/bot'
 require 'vk-ruby'
 require 'json'
-vkapp = VK::Application.new(app_id: 5092774, access_token: "651f5f11815dfc522785e10206cd4a1be22b91bda62b4a7f4fe6568fb67db5c21cb05830f2415e89db410", timeout: 100)
-telegram_token = '128896230:AAEwC7sc0SZvOS_dWand86-4ixPGG43U6Vc'
+vkapp = VK::Application.new(app_id: 5092774, access_token: "", timeout: 100)
+telegram_token = ''
 Telegram::Bot::Client.run(telegram_token) do |bot|
   bot.listen do |message|
   	t_cmd = message.text.split[0]
